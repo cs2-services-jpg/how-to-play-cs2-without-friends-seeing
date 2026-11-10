@@ -1,438 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Play CS2 Without Friends Seeing You (Step by Step)</title>
-    <meta name="description" content="Learn how to play CS2 without friends seeing you online. This step by step guide covers Steam privacy settings, invisible mode, and staying private.">
-    <link rel="canonical" href="https://www.cs2-services.com/how-to-play-cs2-without-friends-seeing">
-    <style>
-        :root {
-            --bg-color: #f4f6f9;
-            --text-main: #333333;
-            --text-light: #555555;
-            --accent-color: #2c7be5;
-            --accent-hover: #1a5bb0;
-            --box-bg: #ffffff;
-            --border-color: #e2e8f0;
-            --note-bg: #eef7ff;
-            --note-border: #8ab4f8;
-            --step-bg: #f8fafc;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            line-height: 1.7;
-            font-size: 18px;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: var(--box-bg);
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom: 1px solid var(--border-color);
-        }
-        h1 {
-            font-size: 2.2rem;
-            color: var(--text-main);
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.3;
-        }
-        main {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        article {
-            background-color: var(--box-bg);
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-        h2 {
-            font-size: 1.8rem;
-            color: var(--text-main);
-            margin-top: 40px;
-            margin-bottom: 20px;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 10px;
-        }
-        h3 {
-            font-size: 1.4rem;
-            color: var(--text-main);
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        p {
-            margin-bottom: 20px;
-            color: var(--text-light);
-        }
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-        a:hover {
-            text-decoration: underline;
-            color: var(--accent-hover);
-        }
-        .toc {
-            background-color: var(--step-bg);
-            padding: 20px 30px;
-            border-radius: 8px;
-            border: 1px solid var(--border-color);
-            margin-bottom: 40px;
-        }
-        .toc p {
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: var(--text-main);
-        }
-        .toc ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        .toc li {
-            margin-bottom: 10px;
-        }
-        .toc a {
-            color: var(--text-light);
-        }
-        .toc a:hover {
-            color: var(--accent-color);
-        }
-        .step-box {
-            background-color: var(--step-bg);
-            border-left: 4px solid var(--accent-color);
-            padding: 20px;
-            margin-bottom: 30px;
-            border-radius: 0 8px 8px 0;
-        }
-        .step-box ol {
-            margin: 0;
-            padding-left: 20px;
-            color: var(--text-light);
-        }
-        .step-box li {
-            margin-bottom: 10px;
-        }
-        .note-box {
-            background-color: var(--note-bg);
-            border: 1px solid var(--note-border);
-            padding: 15px 20px;
-            border-radius: 6px;
-            margin-bottom: 20px;
-            color: var(--text-main);
-        }
-        .note-box strong {
-            color: var(--accent-color);
-        }
-        .checklist {
-            list-style: none;
-            padding: 0;
-        }
-        .checklist li {
-            position: relative;
-            padding-left: 30px;
-            margin-bottom: 15px;
-            color: var(--text-light);
-        }
-        .checklist li::before {
-            content: "\2713";
-            position: absolute;
-            left: 0;
-            top: 0;
-            color: var(--accent-color);
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-        .faq-block {
-            margin-bottom: 30px;
-        }
-        .faq-block h3 {
-            margin-bottom: 10px;
-        }
-        figure {
-            margin: 40px 0;
-            text-align: center;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        figcaption {
-            font-size: 0.9rem;
-            color: #777777;
-            margin-top: 10px;
-            font-style: italic;
-        }
-        .video-wrapper {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            margin: 40px 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        .video-wrapper iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-        footer {
-            text-align: center;
-            padding: 40px 20px;
-            color: var(--text-light);
-            font-size: 0.9rem;
-        }
-        @media (max-width: 600px) {
-            article {
-                padding: 20px;
-            }
-            h1 {
-                font-size: 1.8rem;
-            }
-            h2 {
-                font-size: 1.5rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Play CS2 Without Friends Seeing You (Step by Step)</title>
+  <meta name="description" content="Learn how to play CS2 without friends seeing you online. Simple step-by-step guide covering Invisible mode, Steam privacy settings, and hidden matches.">
+  <style>
+    :root {
+      --bg-color: #f8fafc;
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --accent: #0284c7;
+      --accent-hover: #0369a1;
+      --border-color: #e2e8f0;
+      --note-bg: #fefce8;
+      --note-border: #eab308;
+      --note-text: #713f12;
+      --box-bg: #f1f5f9;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      padding: 40px 16px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    header {
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 30px;
+      line-height: 1.3;
+      color: #0f172a;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-size: 23px;
+      line-height: 1.4;
+      color: #0f172a;
+      margin-top: 36px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      font-size: 19px;
+      line-height: 1.4;
+      color: #334155;
+      margin-top: 24px;
+      margin-bottom: 12px;
+    }
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+
+    .toc {
+      background-color: var(--box-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 24px;
+      margin: 28px 0;
+    }
+
+    .toc h2 {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 12px;
+      border-bottom: none;
+      padding-bottom: 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+    }
+
+    .toc ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .toc li {
+      margin-bottom: 8px;
+    }
+
+    .toc li a {
+      color: var(--text-main);
+    }
+
+    .toc li a:hover {
+      color: var(--accent);
+    }
+
+    .note-box {
+      background-color: var(--note-bg);
+      border-left: 4px solid var(--note-border);
+      padding: 16px 20px;
+      margin: 24px 0;
+      border-radius: 4px;
+      color: var(--note-text);
+      font-size: 16px;
+    }
+
+    .note-box strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #854d0e;
+    }
+
+    .step-box {
+      background-color: var(--box-bg);
+      border-left: 4px solid var(--accent);
+      border-radius: 6px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .step-box ol {
+      padding-left: 20px;
+      margin-bottom: 0;
+    }
+
+    .step-box li {
+      margin-bottom: 10px;
+      padding-left: 4px;
+    }
+
+    .step-box li:last-child {
+      margin-bottom: 0;
+    }
+
+    .styled-checklist {
+      list-style: none;
+      padding-left: 0;
+      margin: 24px 0;
+    }
+
+    .styled-checklist li {
+      position: relative;
+      padding-left: 32px;
+      margin-bottom: 12px;
+      line-height: 1.6;
+    }
+
+    .styled-checklist li::before {
+      content: "\2713";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 22px;
+      height: 22px;
+      background-color: #e0f2fe;
+      color: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    figure {
+      margin: 28px 0;
+      text-align: center;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid var(--border-color);
+      display: block;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      margin: 28px 0;
+      border: 1px solid var(--border-color);
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .faq-block {
+      background-color: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
+    }
+
+    .faq-block h3 {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-size: 18px;
+      color: #0f172a;
+    }
+
+    .faq-block p {
+      margin-bottom: 0;
+      color: #334155;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-color);
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 16px 8px;
+      }
+
+      .container {
+        padding: 20px 16px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
 <body>
 
+  <div class="container">
     <header>
-        <h1>How to Play CS2 Without Friends Seeing You (Step by Step)</h1>
+      <h1>How to Play CS2 Without Friends Seeing You (Step by Step)</h1>
+      <p>Counter-Strike 2 is an intense tactical shooter that requires total concentration. Some days you just want to jump into deathmatch, practice recoil patterns, or queue Premier matches alone. By default, Steam broadcasts your online status and the game you are playing to everyone on your friends list. The moment you start CS2, friends receive notifications and can see you in a match. This usually brings unwanted party invites and messages. Learning <strong>how to play cs2 without friends seeing</strong> you is an essential skill for peaceful gaming sessions. The team at <a href="https://www.cs2-services.com">CS2-Services</a> assists competitive players every day with account setup, privacy options, and performance management. This guide covers every step you need to stay hidden while playing.</p>
     </header>
 
+    <nav class="toc">
+      <h2>In This Guide</h2>
+      <ul>
+        <li><a href="#why-hide">Why Players Want to Hide Their Activity in CS2</a></li>
+        <li><a href="#what-friends-see">What Your Friends Can Actually See on Steam</a></li>
+        <li><a href="#method-1">Method 1: Set Your Steam Status to Invisible or Offline</a></li>
+        <li><a href="#method-2">Method 2: Change Your Steam Privacy Settings</a></li>
+        <li><a href="#method-3">Method 3: Control Who Can Join You and Send Invites</a></li>
+        <li><a href="#friends-list">How to Stay Private While Using Your Steam Friends List</a></li>
+        <li><a href="#faceit-privacy">Playing FACEIT Without Friends Seeing</a></li>
+        <li><a href="#common-problems">Common Problems and Fixes</a></li>
+        <li><a href="#video-tutorial">Video Guide: Steam Privacy and Hidden Matches</a></li>
+        <li><a href="#quick-checklist">Quick Checklist for Private CS2 Sessions</a></li>
+        <li><a href="#faq">Frequently Asked Questions</a></li>
+      </ul>
+    </nav>
+
     <main>
-        <article>
-            <section>
-                <p>Counter-Strike 2 is a competitive game that requires a lot of focus. Sometimes you just want to log in, warm up, and play a few matches completely alone. You might be wondering how to play cs2 without friends seeing you online. By default, Steam shows your online status and the exact game you are playing to everyone on your friends list. This means you might get random party invites when you just want to solo queue.</p>
-                
-                <p>At <a href="https://www.cs2-services.com">CS2-Services</a>, we know that privacy is important for gamers of all skill levels. Taking control of your profile visibility can make your gaming sessions much more relaxing. This guide will show you exactly how to change your Steam settings so you can enjoy your game in peace without any interruptions.</p>
-            </section>
+      <article>
+        <section id="why-hide">
+          <h2>Why Players Want to Hide Their Activity in CS2</h2>
+          <p>Not every gaming session is suited for full party lobbies. Players choose to hide their in-game presence for several practical reasons.</p>
+          <p>Personal privacy is often the top reason. You might have only half an hour between work tasks or family responsibilities. In those moments, you want a fast casual match without committing to a full competitive game with friends. When you play alone, you can exit the game whenever your schedule demands.</p>
+          <p>Solo training is another major factor. Improving in CS2 takes serious practice. Many players prefer to spend time on aim training maps, recoil control drills, and grenade lineups on Mirage or Inferno. If friends see you online, they will often send party invites. Turning them down repeatedly can feel awkward, and accepting them takes you away from your training plan.</p>
+          <p>Avoiding unwanted party invites also protects your social comfort. You might have friendly coworkers, casual acquaintances, or distant steam contacts who love to queue. If you do not feel like talking on voice chat, appearing hidden prevents awkward conversations before they start.</p>
+          <p>Rank and focus also matter. If your regular gaming group has a lower skill group, queuing together in Premier mode can put your rating at risk. Solo queuing allows you to focus purely on your own mechanics, crosshair placement, and communication with matching random teammates.</p>
+          <p>Finally, content creators and streamers often need off-stream practice time. They test crosshairs, video configurations, and radar setups without alerting their entire community list. Staying hidden allows them to test settings in complete peace.</p>
+        </section>
 
-            <nav class="toc">
-                <p>In this guide:</p>
-                <ul>
-                    <li><a href="#why-hide">Why players want to hide their activity in CS2</a></li>
-                    <li><a href="#what-friends-see">What your friends can actually see on Steam</a></li>
-                    <li><a href="#method-1">Method 1: Set your Steam status to Invisible or Offline</a></li>
-                    <li><a href="#method-2">Method 2: Change your Steam privacy settings</a></li>
-                    <li><a href="#method-3">Method 3: Control who can join you and send invites</a></li>
-                    <li><a href="#stay-private">How to stay private while using your Steam friends list</a></li>
-                    <li><a href="#faceit">Playing FACEIT without friends seeing</a></li>
-                    <li><a href="#problems">Common problems and fixes</a></li>
-                    <li><a href="#checklist">Quick checklist</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
-            </nav>
+        <section id="what-friends-see">
+          <h2>What Your Friends Can Actually See on Steam</h2>
+          <p>To hide your gameplay effectively, you must understand what Steam shares with other players by default. When your profile uses standard settings, several parts of your activity are visible to friends.</p>
 
-            <section id="why-hide">
-                <h2>Why players want to hide their activity in CS2</h2>
-                <p>People have many reasons for wanting to stay hidden while playing. You might want to practice your aim in a deathmatch server without getting messages. Sometimes you want to play a quick competitive match but you do not want to join a full party.</p>
+          <h3>Online Status and Activity Indicator</h3>
+          <p>Steam places a colored border around your avatar. A blue border indicates you are online and browsing the store or community. The moment you start CS2, this border turns bright green. Steam also places your profile at the top of your friends' chat windows inside the in-game group.</p>
 
-                <p>Privacy is a big reason for many players. You might have friends from different games on your list. You do not always want them to know how many hours you are spending in Counter-Strike. Some players like to keep their gaming habits completely separate from their social lives.</p>
+          <h3>Current Game Title</h3>
+          <p>Steam displays Counter-Strike 2 directly beneath your profile name. Anyone opening their friends list can instantly see the exact game you launched. This title stays visible for the entire duration of your gaming session.</p>
 
-                <p>Solo queueing requires a lot of mental energy. When you appear online, friends might send you game invites. If you decline, they might feel bad. If you accept, you might not play your best because you are distracted. Playing in a hidden mode solves this problem easily. You can just play the game without explaining yourself.</p>
+          <h3>Game Details and Match Data</h3>
+          <p>If your privacy settings permit game details, Steam broadcasts rich presence data. For CS2, friends can often see your current mode, such as Premier, Competitive, or Deathmatch. They can also see your current map and sometimes the live round score.</p>
 
-                <p>Streaming is another very common reason. If you stream your games on a platform, you might want to hide your activity to avoid stream snipers. You want to control who knows you are queuing for a match. Hiding your status gives you a layer of protection.</p>
+          <h3>Recent Playtime and Total Hours</h3>
+          <p>Steam tracks your total hours in CS2 as well as your hours over the past two weeks. When someone visits your profile page, they can see exactly how much time you spent playing recently. If you claimed you were busy away from your PC, a high recent playtime number can reveal your session.</p>
 
-                <p>Finally, sometimes you just want to relax. Competitive games are stressful. You might want to test new video settings or practice throwing smoke grenades on an empty map. You do not need an audience for that. Changing your status gives you the peace and quiet you need to focus.</p>
+          <h3>Friends List and Mutual Groups</h3>
+          <p>Your friends list can show mutual acquaintances and public groups you join. If you queue with one friend while avoiding another, mutual contacts might notice both of you in a match together. Knowing these visibility layers helps you choose the right settings to apply.</p>
+        </section>
 
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&fit=crop&w=800&q=80" alt="Close up of a mechanical gaming keyboard on a desk">
-                    <figcaption>Taking a break from social gaming can help you focus on your mechanics.</figcaption>
-                </figure>
-            </section>
+        <section id="method-1">
+          <h2>Method 1: Set Your Steam Status to Invisible or Offline</h2>
+          <p>The fastest way to hide your CS2 gameplay is to change your chat status directly within the Steam desktop application. Steam provides two options that conceal your activity: Invisible and Offline.</p>
 
-            <section id="what-friends-see">
-                <h2>What your friends can actually see on Steam</h2>
-                <p>Before you change your settings, it helps to know what your friends can see right now. Steam shares a large amount of information by default. If your account is completely public, anyone can track your daily gaming routine.</p>
+          <div class="note-box">
+            <strong>Important Note on Steam Menus:</strong>
+            Valve updates the Steam client regularly. Menu labels, dropdown positions, and layout details can look slightly different depending on your Steam version. If an exact button name looks different, check the nearest matching option in your client settings.
+          </div>
 
-                <p>Your online status is the most obvious detail. When you open the Steam client, your name turns blue in the friends list. This tells everyone you are online and ready to chat. When you launch a game, your name turns bright green.</p>
+          <h3>Understanding Invisible Versus Offline Mode</h3>
+          <p>Invisible mode is the recommended choice for most Counter-Strike 2 players. When you select Invisible, your profile appears completely offline to everyone on your friends list. You do not appear in the green in-game section. However, you stay connected to Steam servers. This means you can still open the chat window, send messages to specific friends, and receive Steam updates.</p>
+          <p>Offline mode is more restrictive. When you choose Offline, Steam signs you out of the friends network entirely. You cannot send direct messages or see who is online until you log back in. For normal gaming, Invisible mode gives you privacy while keeping your client connected.</p>
 
-                <p>Your current game activity is also highly visible. Right under your name, Steam prints the title of the game in green letters. For Counter-Strike 2, it also uses a feature called rich presence. This means Steam can show your friends if you are sitting in the main menu or playing in a specific map.</p>
+          <div class="step-box">
+            <h3>Steps to Set Your Status to Invisible</h3>
+            <ol>
+              <li>Open the Steam desktop client on your computer.</li>
+              <li>Click on the <strong>Friends</strong> menu in the top navigation bar, or click <strong>Friends &amp; Chat</strong> in the bottom-right corner.</li>
+              <li>Click the small drop-down arrow next to your profile avatar and name at the top of the chat panel.</li>
+              <li>Select <strong>Invisible</strong> from the list of statuses.</li>
+              <li>Verify that your avatar outline turns grey, confirming that your status is hidden.</li>
+            </ol>
+          </div>
 
-                <p>Your game details are public too. This includes your total playtime. Anyone clicking your profile can see exactly how many hours you have in every game you own. They can also see your recent achievements and what items you have recently unlocked during your matches.</p>
+          <p>Once set to Invisible, you can launch Counter-Strike 2. Your friends will see you as offline, just as if your computer were powered down. This status remains active across game restarts until you manually change it back to Online.</p>
 
-                <p>Your friends list is another public detail. People can see who you are friends with. If they see you are in a game, they might check your friends list to guess who you are playing with in a party. You can change all of these things. Steam gives you full control over your profile privacy.</p>
-            </section>
+          <figure>
+            <img src="IMAGE-URL-HERE" alt="Steam friends panel showing the selection of invisible status" width="800" height="450">
+            <figcaption>Figure 1: Selecting Invisible status from the Steam Friends and Chat drop-down menu.</figcaption>
+          </figure>
+        </section>
 
-            <section id="method-1">
-                <h2>Method 1: Set your Steam status to Invisible or Offline</h2>
-                <p>The easiest way to hide your gaming session is to change your chat status. You have two main options here. You can appear Offline or you can appear Invisible. Both options stop your friends from seeing you launch a game.</p>
+        <section id="method-2">
+          <h2>Method 2: Change Your Steam Privacy Settings</h2>
+          <p>While Invisible mode conceals your real-time status, your Steam profile page might still show your recent playtime or library details. Adjusting your account privacy settings provides a permanent layer of protection. You can also hide Counter-Strike 2 specifically using the private game feature.</p>
 
-                <p>Invisible mode is usually the best choice. It makes you look completely offline to everyone else. Your name stays gray. However, you can still open your friends list, read incoming messages, and send messages if you want to. Offline mode is different because it actually disconnects you from the Steam chat network entirely.</p>
+          <h3>Adjusting Profile Privacy Settings</h3>
+          <p>To prevent friends from viewing your game details on your profile page, adjust your privacy options with these steps:</p>
 
-                <p>Here is a helpful video explaining how to adjust your chat status quickly so you can stay hidden.</p>
-                
-                <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/n4sLw3-6hMw" title="How to appear offline on Steam" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div>
+          <div class="step-box">
+            <ol>
+              <li>Open Steam and click your profile persona name in the top navigation.</li>
+              <li>Click on <strong>Profile</strong>, then click the <strong>Edit Profile</strong> button on the right.</li>
+              <li>In the left column menu, select <strong>Privacy Settings</strong>.</li>
+              <li>Find the section labeled <strong>Game details</strong> and switch it from Public or Friends Only to <strong>Private</strong>.</li>
+              <li>Check the sub-option titled <strong>Always keep my total playtime private</strong>.</li>
+              <li>Set your <strong>Friends list</strong> and <strong>Inventory</strong> to Friends Only or Private based on your needs.</li>
+            </ol>
+          </div>
 
-                <p>Follow these simple steps to change your status using the desktop client:</p>
+          <p>Setting Game details to Private ensures that even if you accidentally stay marked as Online, Steam will not show CS2 under your name. It also conceals your total hours, achievements, and badges. For detailed information on profile rules, you can review <a href="https://help.steampowered.com" target="_blank" rel="noopener">Steam Support</a> pages.</p>
 
-                <div class="step-box">
-                    <ol>
-                        <li>Open the Steam application on your computer.</li>
-                        <li>Look at the very top left corner of the window and click on the "Friends" menu option.</li>
-                        <li>A drop-down menu will appear. Click on "Invisible" or "Offline" from the list.</li>
-                        <li>Alternatively, click the "Friends & Chat" button located in the bottom right corner of the Steam window.</li>
-                        <li>Click the small downward arrow next to your profile name at the top of the chat window.</li>
-                        <li>Select "Invisible" from the options presented.</li>
-                    </ol>
-                </div>
+          <h3>Marking CS2 as a Private Game in Your Library</h3>
+          <p>Valve introduced a feature that lets players hide specific games individually. This is great if you want friends to see you playing cooperative casual games, while keeping your CS2 matches hidden.</p>
 
-                <div class="note-box">
-                    <strong>Note:</strong> Steam menus and interface designs can change over time depending on the software version you use. The exact names of the menus might look slightly different, but the core steps will remain the same.
-                </div>
+          <div class="step-box">
+            <ol>
+              <li>Open your Steam <strong>Library</strong>.</li>
+              <li>Find <strong>Counter-Strike 2</strong> in your game list on the left side.</li>
+              <li>Right-click on Counter-Strike 2.</li>
+              <li>Hover your cursor over the <strong>Manage</strong> submenu.</li>
+              <li>Click on <strong>Mark as private</strong>.</li>
+              <li>Confirm your choice in the verification prompt.</li>
+            </ol>
+          </div>
 
-                <p>Once you select Invisible, your name instantly goes gray for everyone else. They will not get a notification when you launch Counter-Strike 2. You can play your matches in complete silence.</p>
-            </section>
+          <p>When marked as private, Counter-Strike 2 behaves as though you do not own the title to outside visitors. It hides your current in-game status, library ownership, achievements, and playtime from your friends.</p>
 
-            <section id="method-2">
-                <h2>Method 2: Change your Steam privacy settings</h2>
-                <p>Changing your chat status to Invisible is a temporary fix. You have to do it every time you log in, or remember to check it. If you want a more permanent solution, you need to edit your Steam profile privacy settings.</p>
+          <figure>
+            <img src="IMAGE-URL-HERE" alt="Steam library context menu showing the option to mark Counter-Strike 2 as private" width="800" height="450">
+            <figcaption>Figure 2: Marking CS2 as a private game directly from the Steam Library menu.</figcaption>
+          </figure>
+        </section>
 
-                <p>This method allows you to be online and chat with friends normally, but hides the fact that you are playing a game. Your name will be blue, but it will never turn green.</p>
+        <section id="method-3">
+          <h2>Method 3: Control Who Can Join You and Send Invites</h2>
+          <p>Even when your status is hidden, in-game party settings can sometimes allow friends to jump into your lobby uninvited. You should adjust your lobby permissions and chat notification options to prevent unexpected interruptions.</p>
 
-                <div class="step-box">
-                    <ol>
-                        <li>Open Steam and hover your mouse over your profile name at the top center of the screen.</li>
-                        <li>Click on "Profile" in the drop-down menu to view your main page.</li>
-                        <li>Click the "Edit Profile" button located on the right side of your profile page.</li>
-                        <li>Look at the menu on the left side and click on "Privacy Settings".</li>
-                    </ol>
-                </div>
+          <h3>Configuring Steam Friends and Chat Notifications</h3>
+          <p>To avoid loud notification sounds or screen flashes while you are holding an angle in CS2, change your chat settings:</p>
+          <div class="step-box">
+            <ol>
+              <li>Open your <strong>Friends &amp; Chat</strong> window in Steam.</li>
+              <li>Click the small <strong>gear icon</strong> in the top-right corner to open chat settings.</li>
+              <li>Select the <strong>Notifications</strong> tab on the left.</li>
+              <li>Turn off options for playing sounds and flashing windows when messages arrive.</li>
+              <li>Switch your status to <strong>Do Not Disturb</strong> if you want all chat alerts muted completely.</li>
+            </ol>
+          </div>
 
-                <p>Now you will see several options. Here is a breakdown of what each setting changes for your account visibility.</p>
+          <h3>Setting In-Game Lobby Permissions in CS2</h3>
+          <p>When you sit in the CS2 main menu, your party settings dictate whether friends can join your squad directly. To prevent friends from joining your lobby uninvited:</p>
+          <div class="step-box">
+            <ol>
+              <li>Launch Counter-Strike 2.</li>
+              <li>Look at the party panel on the right side of the main dashboard.</li>
+              <li>Check your lobby privacy toggle at the top of the party column.</li>
+              <li>Change the setting from "Open to Friends" to <strong>Friends Need Invites</strong>.</li>
+              <li>Look at the <strong>Looking to Play</strong> beacon on the left side and make sure it is turned off.</li>
+            </ol>
+          </div>
+          <p>Setting your party to invite-only stops contacts from jumping into your queue while you prepare for solo matches.</p>
+        </section>
 
-                <p>The Game details setting controls your playtime, achievements, and current activity. Change this drop-down menu to "Private". When you do this, your friends will see you as online, but they will never see "Counter-Strike 2" under your name. Your total hours will also be hidden from public view.</p>
+        <section id="friends-list">
+          <h2>How to Stay Private While Using Your Steam Friends List</h2>
+          <p>Managing your friends list is another practical step toward total privacy. Over months of playing Counter-Strike, your list can easily collect dozens of random contacts from casual games, trade offers, and community servers. Keeping your list organized makes privacy easier to maintain.</p>
 
-                <p>The Friends list setting controls who can see your connections. You can set this to "Friends Only" or "Private" so random players cannot see your contacts. This stops people from tracking your friend groups.</p>
+          <h3>Organize Friends into Custom Categories</h3>
+          <p>Steam allows you to tag friends and place them into custom groups. You can create one group for real-life friends, one for competitive teammates, and one for casual trade contacts. To categorize a friend, right-click their name in your chat list, select "Manage", and choose "Categorize". This helps you see at a glance who is online without confusion.</p>
 
-                <p>The Inventory setting hides your weapon skins and cases. You might want to set this to Private to avoid getting messages from random traders looking for your items.</p>
+          <h3>Clean Up Inactive Contacts</h3>
+          <p>A large friends list increases the chances that someone notices your activity through mutual connections or community servers. Periodically inspect your list and remove players you no longer queue with. For players who need an established profile look for trading or reputation, some turn to professional <a href="https://www.cs2-services.com/steam-services/buy-steam-friends">Steam friends list services</a> to maintain a credible account appearance without adding personal contacts who monitor their activity.</p>
+          <p>You can also check player tips on the <a href="https://steamcommunity.com" target="_blank" rel="noopener">Steam Community</a> forums to see how other competitive players organize their profiles for privacy.</p>
+        </section>
 
-                <p>Steam also has a relatively new feature that lets you hide a single game completely. Go to your Steam Library, right-click on Counter-Strike 2, hover your mouse over "Manage", and select "Mark as Private". This hides the game from your profile entirely. Nobody will know you own it or play it. If you want to learn more about specific profile features, you can always visit the <a href="https://steamcommunity.com" target="_blank" rel="noopener">Steam Community</a> guides section.</p>
+        <section id="faceit-privacy">
+          <h2>Playing FACEIT Without Friends Seeing</h2>
+          <p>FACEIT is a widely used competitive platform for CS2 matches. However, staying hidden on FACEIT requires extra caution because the platform runs on its own client and website tracking system.</p>
 
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=800&q=80" alt="Close up of a gaming monitor displaying a digital store interface">
-                    <figcaption>Changing your privacy settings ensures your game details stay hidden from the public.</figcaption>
-                </figure>
-            </section>
+          <h3>How FACEIT Displays Match Activity</h3>
+          <p>When you start a match on FACEIT, the service marks your profile as currently playing on the FACEIT website. Anyone on your FACEIT friends list can see your live room link, map vetoes, and squad members. Even if your Steam client is set to Invisible, your FACEIT profile can show that you are active.</p>
 
-            <section id="method-3">
-                <h2>Method 3: Control who can join you and send invites</h2>
-                <p>Sometimes you want to appear online to chat with people, but you just do not want random friends joining your lobby. You can control this using the specific settings inside Counter-Strike 2.</p>
+          <h3>Steps to Maximize FACEIT Privacy</h3>
+          <div class="step-box">
+            <ol>
+              <li>Open your FACEIT client or visit the website.</li>
+              <li>Click your avatar in the upper-right corner and open <strong>Settings</strong>.</li>
+              <li>Navigate to your privacy preferences and restrict status sharing where available.</li>
+              <li>Set your party lobby to private so outside users cannot inspect your room.</li>
+              <li>Ensure your Steam client remains set to <strong>Invisible</strong> before connecting to the match server.</li>
+            </ol>
+          </div>
 
-                <p>First, launch the game. Look for the party and lobby settings on the main menu screen. There is a setting that controls your lobby privacy. You can usually set this to invite only. This means friends cannot just click the "Join Game" button from their Steam friends list. They have to wait for you to send them a direct invite.</p>
+          <h3>Understanding Match History Visibility</h3>
+          <p>Keep in mind that match outcomes, ELO adjustments, and scoreboards on FACEIT are logged on public profile tabs. While friends might not catch you in the exact minute you play, they can see past games if they check your profile later. Players who want to maintain high ranks without running into party friction often check reliable <a href="https://www.cs2-services.com/cs2-faceit-boost">FACEIT boosting options</a> to reach their goals discreetly. If you need help with third-party queue issues, consult the official <a href="https://support.faceit.com" target="_blank" rel="noopener">FACEIT Support</a> desk.</p>
 
-                <p>You should also check your Steam notification settings. Open your main Steam settings, go to the Notifications tab, and turn off alerts for chat messages and party invites. This stops the annoying pop-up boxes from appearing on your screen while you are in a tense clutch situation.</p>
+          <figure>
+            <img src="IMAGE-URL-HERE" alt="FACEIT client showing match lobby and privacy settings" width="800" height="450">
+            <figcaption>Figure 3: Managing queue visibility and lobby preferences on external competitive platforms.</figcaption>
+          </figure>
+        </section>
 
-                <p>If you use the Looking to Play feature in the game menu, remember that this broadcasts your profile to players searching for a group. If you want to stay completely hidden, do not activate this feature. Just queue up normally for regular matchmaking by yourself.</p>
-            </section>
+        <section id="common-problems">
+          <h2>Common Problems and Fixes</h2>
+          <p>Even with careful configuration, small glitches or background services can sometimes broadcast your activity. Here are common problems and how to resolve them.</p>
 
-            <section id="stay-private">
-                <h2>How to stay private while using your Steam friends list</h2>
-                <p>Having a large list of friends can make privacy very difficult. You might want to play with one specific person but hide from everyone else on your list. Steam makes this possible if you know how to use the chat features correctly.</p>
+          <h3>Steam Status Resets to Online</h3>
+          <p>If you set your status to Invisible but friends report seeing you online, Steam might have experienced a brief connection drop. When reconnecting, the client occasionally defaults back to Online. To fix this, open your chat window, toggle to Online, wait a few seconds, and select Invisible again. Restarting Steam usually resolves stubborn connection glitches.</p>
 
-                <p>You can do this by using the Invisible status. Set your status to Invisible so you look offline to the whole list. Then, open your chat window and send a direct message to the one friend you want to play with. You can invite them to your lobby while staying hidden from the rest of your contacts. They will be the only one who knows you are actually online.</p>
+          <h3>Friends See You on Server Lists</h3>
+          <p>If you connect to a community server or casual match, friends who visit your profile might see a "Join Game" button. This happens when your profile Game details are left on Public. Go to your Steam Profile Privacy settings and switch Game details to Private. This removes the join button entirely.</p>
 
-                <p>It also helps to organize your friends. You can create custom categories in your Steam chat window. Group people into lists like close friends, trade partners, or occasional teammates. This makes it much easier to manage who you want to talk to on a given day.</p>
+          <h3>Steam Mobile App Syncing Status</h3>
+          <p>If you use the Steam mobile app on your smartphone, opening the app can update your account status. Open the mobile app, tap your profile picture, and select Invisible in the mobile status menu. This prevents your phone from broadcasting your presence while your desktop is hidden.</p>
 
-                <p>If you have too many inactive friends, it might be time to clean up your list. A smaller list is easier to manage. If you are looking to build a fresh network of players for a specific rank, you might want to look into <a href="https://www.cs2-services.com/steam-services/buy-steam-friends">Steam friends list services</a> that help you connect with similar players securely. Keeping your list organized is a great way to maintain your privacy.</p>
-            </section>
+          <h3>Third-Party Stat Trackers Showing Games</h3>
+          <p>Sites like Leetify or Tracker Network track matches using authentication codes. If you have linked your account to these services, your recent matches appear publicly. If you want full privacy, revoke public access tokens in your CS2 game settings and avoid sharing match sharing codes.</p>
+        </section>
 
-            <section id="faceit">
-                <h2>Playing FACEIT without friends seeing</h2>
-                <p>Many serious players use FACEIT for better servers and a stronger anti-cheat system. Hiding your activity here works a bit differently than normal Steam matchmaking.</p>
+        <section id="video-tutorial">
+          <h2>Video Guide: Steam Privacy and Hidden Matches</h2>
+          <p>If you prefer a visual walkthrough, this video shows how to adjust your Steam status, manage private lobby settings, and keep your gameplay hidden from outside viewers.</p>
 
-                <p>First, you need to understand that FACEIT and Steam are completely separate systems. If you appear Invisible on Steam, your Steam friends will not see you playing. However, your FACEIT friends can still see you online on the FACEIT platform. Your Steam status does not carry over to their client.</p>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/PiF0hG_pgy0" title="How to Make Private Match and Hide Status on Steam" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </section>
 
-                <p>If you want to hide on FACEIT, you must change your status on their website or client as well. You can usually click on your profile picture in the top right corner of the FACEIT client and select the offline status. This stops people from inviting you to hubs or parties.</p>
+        <section id="quick-checklist">
+          <h2>Quick Checklist for Private CS2 Sessions</h2>
+          <p>Before you launch Counter-Strike 2, run through this checklist to make sure your gaming session stays completely hidden:</p>
 
-                <p>Keep in mind that your match history on FACEIT is mostly public. Even if you play while appearing offline, people can look up your profile later and see the recent matches you played. The platform is designed for public competition. If you need help climbing the ranks while staying under the radar, you can check out <a href="https://www.cs2-services.com/cs2-faceit-boost">FACEIT boosting options</a> for a smoother experience.</p>
+          <ul class="styled-checklist">
+            <li>Set your Steam Friends status to Invisible before opening the game.</li>
+            <li>Confirm your chat avatar border is grey instead of green or blue.</li>
+            <li>Set Game details to Private in your Steam Profile Privacy settings.</li>
+            <li>Mark Counter-Strike 2 as a Private Game in your Steam Library.</li>
+            <li>Configure CS2 lobby permissions to Friends Need Invites.</li>
+            <li>Turn off the Looking to Play broadcast on the CS2 main menu.</li>
+            <li>Verify your status on the Steam mobile app matches your desktop.</li>
+            <li>Mute notifications or enable Do Not Disturb in Steam chat.</li>
+            <li>Set third-party platforms like FACEIT to private mode if queuing outside Valve servers.</li>
+          </ul>
+        </section>
 
-                <p>For specific rules about profile privacy and data tracking on their platform, you can check the official <a href="https://support.faceit.com" target="_blank" rel="noopener">FACEIT Support</a> website. In most cases, you cannot completely hide your match history from the public database on their site.</p>
-            </section>
+        <section id="faq">
+          <h2>Frequently Asked Questions</h2>
 
-            <section id="problems">
-                <h2>Common problems and fixes</h2>
-                <p>Sometimes you follow all the steps but friends still message you about your game. This can be frustrating. Here are a few common reasons why this happens and how to fix them.</p>
+          <div class="faq-block">
+            <h3>Can friends see I am playing CS2 if I am offline?</h3>
+            <p>No, friends cannot see that you are playing CS2 when your status is set to Invisible or Offline. Your avatar appears offline, and your green in-game indicator remains hidden. Friends receive no pop-up alerts when you launch the game. However, if your game details remain public, they could see your updated total playtime later.</p>
+          </div>
 
-                <p>The mobile app is a very common problem. If you have the Steam app installed on your phone, it might show you as online even if your computer is set to Invisible. The app runs in the background. Open the app on your phone, go to the chat section, and make sure your status is set to invisible there too.</p>
+          <div class="faq-block">
+            <h3>Does invisible mode hide my CS2 match history?</h3>
+            <p>Invisible mode conceals your real-time status, but it does not erase past match records from public tracking tools. If someone inspects your match history through public sharing codes or third-party stats databases, past matches remain visible. To keep matches hidden, set your Steam Game details to Private and do not link public tracking sites.</p>
+          </div>
 
-                <p>Status update delays can also happen. Sometimes the Steam network takes a minute to update your status across the globe. You should change your status to Invisible before you launch the game, not after. If you launch the game and then go invisible, some friends might still see the initial pop-up notification.</p>
+          <div class="faq-block">
+            <h3>Can I appear offline on Steam but still play with friends I choose?</h3>
+            <p>Yes, you can easily play with chosen teammates while appearing invisible to everyone else. Simply remain in Invisible mode and invite your preferred teammates directly to your party lobby. They will join your match normally, while other players on your friends list will still see your profile as completely offline.</p>
+          </div>
 
-                <p>Another issue is third-party tracking sites. If your profile is public, websites that track statistics can see your recent matches. Setting your game details to Private usually stops this, but it might not erase past data immediately. Be patient and give the system time to update.</p>
+          <div class="faq-block">
+            <h3>Does appearing offline affect my Trust Factor or matchmaking?</h3>
+            <p>Appearing offline or invisible has no impact on your CS2 Trust Factor or matchmaking queues. Valve uses internal standing, report history, and gameplay metrics to determine Trust Factor. Changing your social status simply adjusts your visibility on the friends network without changing how the matchmaking system places you into games.</p>
+          </div>
 
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1612222869049-d8ec83637a3c?auto=format&fit=crop&w=800&q=80" alt="A gaming headset resting on a dark desk next to a mouse">
-                    <figcaption>Double check your mobile app settings to ensure you are fully hidden.</figcaption>
-                </figure>
-            </section>
+          <div class="faq-block">
+            <h3>Will changing privacy settings affect my FACEIT account?</h3>
+            <p>Setting your Steam status to Invisible does not disrupt your ability to queue on FACEIT. You can connect to FACEIT servers normally. However, you should keep your Steam profile accessible during initial verification if required by the platform. Once verified, playing while invisible on Steam works without any major issues in most cases.</p>
+          </div>
+        </section>
 
-            <section id="checklist">
-                <h2>Quick checklist</h2>
-                <p>Here is a fast review of the steps you need to take before your next private gaming session. Make sure you check these off so you can play without any worries.</p>
-                <ul class="checklist">
-                    <li>Set your Steam chat status to Invisible before launching the game.</li>
-                    <li>Check your Steam mobile app to ensure it is also set to Invisible.</li>
-                    <li>Change your Steam Profile Privacy Game Details to Private.</li>
-                    <li>Mark Counter-Strike 2 as a Private Game in your Steam Library menu.</li>
-                    <li>Set your in-game lobby permissions to Invite Only.</li>
-                    <li>Turn off Steam chat notifications to avoid pop-ups during rounds.</li>
-                    <li>Remember to set your FACEIT client status to offline if you use it.</li>
-                    <li>Do not activate the Looking to Play feature in the main game menu.</li>
-                    <li>Group your close friends into a separate chat category for easier messaging.</li>
-                </ul>
-            </section>
-
-            <section id="faq">
-                <h2>FAQ</h2>
-                
-                <div class="faq-block">
-                    <h3>Can friends see I am playing CS2 if I am offline?</h3>
-                    <p>If you set your Steam status to offline or invisible, your friends will not see you launch the game. Your name will stay gray in their list. However, if your game details are set to public, they might see your total hours played go up if they check your profile page.</p>
-                </div>
-
-                <div class="faq-block">
-                    <h3>Does invisible mode hide my CS2 match history?</h3>
-                    <p>No, invisible mode only hides your current chat status. Your match history is saved in the game servers. Anyone who has your match sharing code can still see your recent games. You need to change your Steam privacy settings to hide your achievements and total playtime from the public.</p>
-                </div>
-
-                <div class="faq-block">
-                    <h3>Can I appear offline on Steam but still play with friends I choose?</h3>
-                    <p>Yes, you can easily do this. You just need to set your status to Invisible. You will look offline to everyone. You can then right-click a specific friend and send them a message or a game invite. They will be able to join your lobby without blowing your cover.</p>
-                </div>
-
-                <div class="faq-block">
-                    <h3>Does appearing offline affect my Trust Factor or matchmaking?</h3>
-                    <p>No, changing your profile privacy or chat status does not affect your matchmaking experience at all. Valve uses your gameplay behavior and account standing to calculate Trust Factor. Playing in invisible mode is a standard feature and will not cause any issues with your queue times.</p>
-                </div>
-
-                <div class="faq-block">
-                    <h3>Will changing privacy settings affect my FACEIT account?</h3>
-                    <p>In most cases, making your Steam profile private does not break your connection to FACEIT. However, some third-party hubs or tournaments might require a public profile to verify your game hours. Your match results on the FACEIT website will remain visible to other users reading the platform.</p>
-                </div>
-            </section>
-        </article>
+        <section id="closing">
+          <p>Playing Counter-Strike 2 in private lets you enjoy the game on your own schedule. Whether you want to train your aim, test new crosshair settings, or climb ranks without social pressure, using Invisible mode and private library options keeps your gaming sessions peaceful. For more tips on improving your competitive setup and mastering game mechanics, be sure to read the next guide</a> in our series.</p>
+        </section>
+      </article>
     </main>
 
     <footer>
-        <p>Taking control of your gaming privacy helps you enjoy your time on the server. By using invisible mode and adjusting your profile settings, you can focus entirely on your gameplay. You do not have to worry about unwanted messages or lobby invites anymore. We hope this step by step guide helped you set up your account exactly how you want it. If you need more help with your Steam settings, <a href="[PASTE NEXT POST URL HERE]">read the next guide</a> to improve your gaming experience. For official account support, always check the <a href="https://help.steampowered.com" target="_blank" rel="noopener">Steam Support</a> documentation.</p>
+      <p>&copy; 2026 CS2-Services. All rights reserved. Valve, Steam, and Counter-Strike are trademarks of Valve Corporation.</p>
     </footer>
+  </div>
 
 </body>
 </html>
